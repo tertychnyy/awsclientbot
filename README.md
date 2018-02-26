@@ -18,5 +18,5 @@ Typical usage looks like this::
 
     acb = AWSClientBot()
     acb.push(token, "Started")
-    my_long_computation_function()
+    my_long_running_function() <-- Replace this with your own function
     acb.push(token, "Done")
