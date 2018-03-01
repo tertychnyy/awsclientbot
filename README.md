@@ -1,7 +1,9 @@
 <h1 align="center">AWS Client Bot for Python</h1>
 
 <div align="center">
+
 [![Documentation Status](https://readthedocs.org/projects/awsclientbot/badge/?version=latest)](http://awsclientbot.readthedocs.io/en/latest/?badge=latest)
+
 </div>
 
 Use this library to push messages from AWS EC2 instance to Telegram via [@aws_client_bot](https://t.me/aws_client_bot).
