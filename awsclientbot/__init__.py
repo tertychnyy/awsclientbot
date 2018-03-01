@@ -10,7 +10,7 @@ class AWSClientBot():
         self._instance_id = r.text
         self._token = token
 
-    def push(self, token, message):
+    def push(self, message):
 
         data = {
             "token": self._token,
