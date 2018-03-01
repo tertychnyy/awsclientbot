@@ -4,15 +4,16 @@ __author__ = 'it@chatfirst.co (Ivan Tertychnyy)'
 
 
 class AWSClientBot():
-    def __init__(self):
-        self.base_url = "https://b45599xxme.execute-api.us-west-2.amazonaws.com/prod/awsclientbot_push"
+    def __init__(self, token):
+        self._base_url = "https://b45599xxme.execute-api.us-west-2.amazonaws.com/prod/awsclientbot_push"
         r = requests.get("http://169.254.169.254/latest/meta-data/instance-id")
-        self.instance_id = r.text
+        self._instance_id = r.text
+        self._token = token
 
     def push(self, token, message):
 
         data = {
-            "token": token,
-            "message": "{i}: {m}".format(i=self.instance_id, m=message)
+            "token": self._token,
+            "message": "{i}: {m}".format(i=self._instance_id, m=message)
         }
-        r = requests.post(self.base_url, json=data)
+        r = requests.post(self._base_url, json=data)

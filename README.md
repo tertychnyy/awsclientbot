@@ -16,7 +16,7 @@ Typical usage looks like this::
 
     from awsclientbot import AWSClientBot
 
-    acb = AWSClientBot()
-    acb.push(token, "Started")
+    acb = AWSClientBot(token)
+    acb.push("Started")
     my_long_running_function() <-- Replace this with your own function
-    acb.push(token, "Done")
+    acb.push("Done")
