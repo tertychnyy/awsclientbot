@@ -13,7 +13,7 @@ setup(
         "requests>=2.10.0",
     ],
   project_urls={
-    'Documentation': 'https://github.com/tertychnyy/awsclientbot/blob/master/README.md',
+    'Documentation': 'http://awsclientbot.readthedocs.io/en/latest/',
     'Tracker': 'https://github.com/tertychnyy/awsclientbot/issues',
   },
 )
