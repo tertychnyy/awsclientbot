@@ -13,6 +13,6 @@ class AWSClientBot():
 
         data = {
             "token": token,
-            "message": "{i} says\n\n{m}".format(i=self.instance_id, m=message)
+            "message": "{i}: {m}".format(i=self.instance_id, m=message)
         }
         r = requests.post(self.base_url, json=data)
