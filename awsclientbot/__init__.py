@@ -1,6 +1,6 @@
 import requests
 
-__author__ = 'it@chatfirst.co (Ivan Tertychnyy)'
+__author__ = 'itertychnyy@gmail.com (Ivan Tertychnyy)'
 
 
 class AWSClientBot():
